@@ -1,6 +1,25 @@
 {
   description = "Agda shell";
 
+  # these caches should at least have the shell for x86_64-linux
+  nixConfig = {
+    extra-substituters = [
+      "https://agda-devshell.cachix.org"
+      "https://nix-community.cachix.org"
+      "https://cache.iog.io"
+      "https://cache.nixos.org"
+      "https://iohk.cachix.org"
+    ];
+    extra-trusted-public-keys = [
+      "agda-devshell.cachix.org-1:qPjcQUeeMNRXosSXoT9zWSwHG2TyGG75Uojfso6FHd8="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "cache.iog.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
+      "iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7Rqoo="
+    ];  
+  };
+
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
     agda-language-server.url = "github:zmrocze/agda-language-server.nix"; 
