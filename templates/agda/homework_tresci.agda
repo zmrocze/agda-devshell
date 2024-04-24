@@ -6,6 +6,19 @@ module homework_tresci where
 
 -- Znaki matematyczne wpisujemy naciskając "\" a następnie wpisując (zwykle?) latexową nazwę symbolu.
 
+-- Skróty klawiszowe (C to Crtl):
+-- C-c C-l          check file
+-- C-c C-SPC        give (fill goal)
+-- C-c C-,          display goal and context
+-- C-c C-c          split cases
+-- C-c C-f          go to next goal
+-- C-c C-t          goal type
+-- C-c C-r          refine
+-- C-c C-d          display type of expression
+-- C-c C-n          evaluate expression (normally this is C-c C-n)
+-- C-c C-a          try to find proof automatically
+-- \bN \alpha \to   math symbols
+
 open import Data.Nat using (ℕ; suc; zero; _*_; _≤_; s≤s; z≤n; _+_)
 open import Relation.Binary.PropositionalEquality using (_≡_; _≢_)  
 open import Relation.Binary.PropositionalEquality using (refl; trans; sym; cong; subst)
