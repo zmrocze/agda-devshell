@@ -1,7 +1,7 @@
 
 # Agda szablon
 
-Plik `homework_tresci.agda` zawiera treści i listę importów.
+Plik [homework_tresci.agda](./homework_tresci.agda) zawiera treści i listę importów.
 
 ## Środowisko programistyczne
 
