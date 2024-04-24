@@ -21,7 +21,13 @@ Pozostałym proponuję jedną z dwóch opcji:
 
 ### Nix i Vscode (polecana)
 
-Zainstaluj [nix](https://nixos.org/download/) (tj. wywołaj `sh <(curl -L https://nixos.org/nix/install) --daemon`).
+Zainstaluj [nix](https://nixos.org/download/) zgodnie z instrukcją (tj. wywołaj `sh <(curl -L https://nixos.org/nix/install) --daemon`). Włącz potrzebną funkcjonalność dodając linijkę:
+
+```
+experimental-features = nix-command flakes
+```
+
+do pliku `~/.config/nix/nix.conf` lub `/etc/nix/nix.conf`.
 
 Wykonaj:
 
@@ -33,6 +39,7 @@ Komenda umiejscowi Cię w shellu, w którym dostępne są programy `agda`, `agd
 
 Program `als` razem z wtyczką o nazwie `agda-mode` do Vscode'a zapewnia wsparcie do agdy w edytorze kodu. Uruchom Vscode z tego shella (komendą `code .`). Zobacz [drugie-README](https://github.com/zmrocze/agda-devshell/blob/main/README.md) po wskazówki o tym jak poinstruować to rozszerzenie do zauważenia że biblioteka standardowa jest w scope'ie.
 
+Można skopiować projekt szablonowy komendą: `nix flake init -t github:zmrocze/agda-devshell#agda`.
 `Nix`a odinstalujesz tak jak tu napisano: https://nixos.org/manual/nix/stable/installation/uninstall.
 
 ### Online
