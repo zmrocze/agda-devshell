@@ -1,1 +1,3 @@
-use_nix
+use flake .#agda-shell
+
+# use flake github:zmrocze/agda-devshell#agda-shell
