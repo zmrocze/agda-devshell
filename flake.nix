@@ -3,14 +3,14 @@
 
   # these caches should at least have the shell for x86_64-linux
   nixConfig = {
-    extra-substituters = [
+    trusted-substituters = [
       "https://agda-devshell.cachix.org"
       "https://nix-community.cachix.org"
       "https://cache.iog.io"
       "https://cache.nixos.org"
       "https://iohk.cachix.org"
     ];
-    extra-trusted-public-keys = [
+    trusted-public-keys = [
       "agda-devshell.cachix.org-1:qPjcQUeeMNRXosSXoT9zWSwHG2TyGG75Uojfso6FHd8="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
