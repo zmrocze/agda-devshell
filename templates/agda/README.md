@@ -21,6 +21,8 @@ Pozostałym proponuję jedną z dwóch opcji:
 
 ### Nix i Vscode (polecana)
 
+Zainstaluj edytor Vscode i wtyczkę do niego [agda-mode](https://marketplace.visualstudio.com/items?itemName=banacorn.agda-mode).
+
 Zainstaluj [nix](https://nixos.org/download/) zgodnie z instrukcją (tj. wywołaj `sh <(curl -L https://nixos.org/nix/install) --daemon`). Włącz potrzebną funkcjonalność dodając linijkę:
 
 ```
