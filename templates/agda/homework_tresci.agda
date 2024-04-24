@@ -1,5 +1,4 @@
 
-
 module homework_tresci where
 
 -- Poniższe importy są przydatne i wystarczające do rozwiązań. Importuję wszystko explicit, żeby podpowiedzieć jak się rzeczy nazywają.

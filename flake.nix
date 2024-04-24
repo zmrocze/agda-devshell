@@ -8,11 +8,7 @@
 
   outputs = inputs@{ self, nixpkgs, flake-parts, agda-language-server, ... }:
     let
-      # We leave it to just linux to be able to run `nix flake check` on linux, 
-      # see bug https://github.com/NixOS/nix/issues/4265
-      # systems = [ "x86_64-linux" ];
       systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
-
     in
 
     flake-parts.lib.mkFlake { inherit inputs; } {

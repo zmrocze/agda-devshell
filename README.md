@@ -6,7 +6,7 @@
 
 Nix shell provides the `agda` compiler, wrapped with the arguments that link to standard library and ghc.
 Also `agda-mode` for use with emacs.
-Also `als` for use with vscode (and in the future hopefully others).
+Also `als` for use with vscode.
 
 #### Use with Vscode
 
