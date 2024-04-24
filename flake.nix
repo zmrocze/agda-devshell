@@ -31,5 +31,18 @@
             };
           };
         };
-    };
+      flake = {
+        templates.agda = {
+          description = "Agda project template";
+          path = ./templates/agda;
+          welcomeText = ''
+              This is an Agda project template with 2 agda source files.
+              
+              I don't know how important the agda-template.agda-lib file is \_(ツ)_/¯.
+
+              If you use direnv check out .envrc.example.
+            '';
+          };
+        };
+      };
 }
