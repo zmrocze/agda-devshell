@@ -40,4 +40,4 @@ For use with emacs consult some other sources. (Though this is the officially su
 
 ## project template
 
-You can run `nix `
+You can run `nix flake init -t github:zmrocze/agda-devshell#agda` to copy some agda template to your dir.
